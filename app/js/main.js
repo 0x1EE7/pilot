@@ -7,7 +7,7 @@ requirejs.config({
     'page': 'js/page',
     'data': 'js/data',
     'flight':'bower_components/flight',
-    'hogan' : "bower_components/hogan/dist/hogan-3.0.0.amd"
+    'hogan' : 'js/lib/hogan-3.0.0.amd'
   }
 });
 
