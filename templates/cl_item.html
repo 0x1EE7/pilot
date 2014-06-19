@@ -1,0 +1,12 @@
+<li href="#" class=" separator list-group-item "> 
+  <div {{^online}}style="opacity:.65;pointer-events:none;"{{/online}}>
+  <img src="{{userImg}}" alt="{{userName}}" class="img-circle pull-left {{#online}}dc-user-online{{/online}}" style="width:50px;height: 50px;margin-right:10px;"/>
+  <h4 class="list-group-item-heading pull-left">{{userName}}</h4>
+  <a class="btn btn-default btn-sm pull-right dc-btn-start-chat" data-email="{{email}}" >
+    <i class="fa fa-comments-o"></i>
+  </a>
+   <p class="list-group-item-text ">
+    {{email}}
+  </p>
+  </div>
+</li>

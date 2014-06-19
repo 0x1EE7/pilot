@@ -1,0 +1,133 @@
+.separator {
+  border-bottom: 1px solid;
+}
+
+.contacts .list-group-item {
+  border:none;
+}
+
+
+
+div.dc-window {
+  position: fixed;
+  /*Resizable*/
+  overflow: hidden;
+  resize: both;
+  min-width: 200px;
+  min-height:300px;
+  max-width: 500px;
+  max-height: 600px;
+  opacity: 0.7;
+}
+
+animate {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+div.dc-window:last-child {
+  opacity: 1;
+}
+
+div.message-box{
+  background-color: rgba(245,245,245,0.6);
+}
+div.minimized {
+  width: 200px;
+  position: relative;
+  float:left;
+  margin-right: 5px;
+  opacity:1;
+}
+
+.vflex-cont {
+    /*flex*/
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+}
+
+.vflex {
+    -webkit-flex: 1 1 auto;
+}
+
+div.dc-minimize-bar {
+  position:fixed;
+  bottom:0;
+}
+
+div.contacts {
+  position:fixed;
+  bottom:0px;
+  margin-bottom:0px;
+  right:5px;
+  width:300px;
+  min-width:300px;
+  z-index:100;
+  max-height: 100%;
+}
+.panel-body {
+  resize:none;
+  overflow-y: scroll;
+}
+img.dc-user-online{
+  border:solid;
+  border-color: greenyellow;
+}
+
+
+.dc-chat-message {
+  display:block;
+  background-color: rgb(219, 237, 254);
+  top: 115px;
+  border: rgb(127, 127, 127) solid 1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.dc-chat-message::before{
+content: '';
+position: relative;
+border-style: solid;
+border-color: transparent rgb(219, 237, 254);
+display: block;
+width: 0px;
+z-index: 1;
+
+}
+.received.dc-chat-message::before{
+border-width: 5px 5px 5px 0px;
+float: left;
+left: -10px;
+top: 0px;
+}
+.received.dc-chat-message {
+  display:inline-block;
+}
+.sent.dc-chat-message{
+  float:right;
+}
+.sent.dc-chat-message::before{
+  border-width: 5px 0px 5px 5px;
+  right:-10px;
+  bottom:0px;
+  float:right;
+}
+
+.dc-time {
+-webkit-user-select: none;
+position:relative;
+bottom:0px;
+left:0px;
+color: rgb(166, 166, 166);
+display: inline;
+font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+font-size: 11px;
+width: auto;
+float:left;
+}
+

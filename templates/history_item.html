@@ -1,0 +1,9 @@
+<div class="clearfix">
+  {{#remote}}
+  <img src="{{userImg}}" class="img-circle" style="width:40px;height: 40px;margin:0px 5px 5px 0px;display:inline;"/>
+  {{/remote}}
+
+  <div class="dc-chat-message clearfix {{#remote}}received{{/remote}}{{^remote}}sent{{/remote}}" >
+    {{message}} <span class="dc-time">{{time}}</span>
+  </div>
+</div>
